@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- ========= Login area ========== -->
+    <div class="container" id="login-area">
+        <h2 class="text-center my-5 text-uppercase">Welcome to Payneer Bank</h2>
+        <div class="p-5 shadow rounded-3">
+            <form action="">
+                <h3 class="mb-4">Login</h3>
+                <label class="form-label">Username</label>
+                <input type="text" name=""  class="mb-3 form-control">
+                <label class="form-label">Password</label>
+                <input type="password" required name="" class="mb-3 form-control" >
+                <button type="submit" id="login-btn" class="mb-3 btn btn-success">Submit</button>
+            </form>
+            <div class="alert alert-info fs-4">Just click submit button to login.</div>
+        </div>
+    </div>
+    <!-- ========= Deposit and Withdraw area ========== -->
+    <div class="container my-5" id="tnx-area">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="mt-3 mx-2 text-white bg-success my-sm-3 rounded-3 p-3">
+                    <h5>Deposit</h5>
+                    <h1>$ <span id="diposit-amount">00</span></h1>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="mt-3 mx-2 text-white bg-info my-sm-3 rounded-3 p-3">
+                    <h5>Withdraw</h5>
+                    <h1>$ <span id="Withdraw-amount">00</span></h1>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="mt-3 mx-2 text-white bg-warning my-sm-3 rounded-3 p-3">
+                    <h5>Balance</h5>
+                    <h1>$ <span id="balance-amount">00</span></h1>
+                </div>
+            </div>
+        </div>
+    <!-- Diposit,Withdraw input Section -->
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="p-4 mt-sm-3 mt-3 rounded mx-3 shadow">
+                    <h3 class="mb-3">Deposit</h3>
+                    <input id="diposit-inp" type="number" class="form-control">
+                    <button id="diposit-btn" class="btn btn-success mt-3" type="submit">Submit</button>
+                    <div id="custom-alert-deposit" class="alert alert-warning mt-2"></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="p-4 mt-sm-3 mt-3 rounded mx-3 shadow">
+                    <h3 class="mb-3">Withdraw</h3>
+                    <input id="Withdraw-inp" type="number" class="form-control">
+                    <button id="Withdraw-btn" class="btn btn-danger mt-3" type="submit">Submit</button>
+                    <div id="custom-alert-withdraw" class="alert alert-warning mt-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========= Custom javaScript Code Link ========== -->
+    <script src="script.js"></script>
+    <!--  ======== Bootstrap Bundle with Popper Start ========= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--  ======== Bootstrap Bundle with Popper End ========= -->
+
+  </body>
+</html>
