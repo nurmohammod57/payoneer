@@ -43,7 +43,10 @@ WithdrawBtn.addEventListener('click',function(){
         Withdraw_amount.innerText = Withdraw_inp_num
         let balance_amount = document.getElementById('balance-amount');
         let balance_amount_num = parseFloat(balance_amount.innerText);
-        balance_amount.innerText = balance_amount_num - Withdraw_inp_num
+        balance_amount.innerText = balance_amount_num - Withdraw_inp_num;
+        let Withdraw_alert = document.getElementById('custom-alert-withdraw')
+        Withdraw_alert.style.display='none';
+        Withdraw_inp.value = '';
     }else{
         let Withdraw_alert = document.getElementById('custom-alert-withdraw')
         Withdraw_alert.style.display='block';
